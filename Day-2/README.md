@@ -56,12 +56,13 @@ gcloud compute instances create jenkins-vm `
 ### Firewall Rules
 
 ```powershell
-gcloud compute firewall-rules create jenkins-allow `
+gcloud compute firewall-rules create jenkins-allow-my-ip `
   --direction=INGRESS `
   --priority=1000 `
   --network=default `
   --action=ALLOW `
   --rules="tcp:22,tcp:80,tcp:443,tcp:8080" `
+  --source-ranges=122.161.52.244/32 `
   --target-tags=jenkins-server
 ```
 
