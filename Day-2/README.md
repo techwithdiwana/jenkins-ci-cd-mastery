@@ -114,7 +114,7 @@ sudo apt install -y openjdk-17-jdk
 java -version
 ```
 
-### Step 2: Add Jenkins Repository & Key (❗ Missing Earlier – FIXED)
+### Step 2: Add Jenkins Repository & Key
 
 ```bash
 curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
@@ -226,7 +226,7 @@ docker images | grep day2-frontend-app
 
 ---
 
-## 🎤 Safe Line (Must Say)
+## 
 
 > **This is a simple Freestyle job, mostly used for basic CI.**
 
