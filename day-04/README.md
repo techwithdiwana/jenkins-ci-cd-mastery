@@ -52,7 +52,24 @@ kubernetes-zero-to-hero/
         ├── api/
         │   └── smoke.sh
         └── ui/
-            └── playwright.config.js
+            ├── package.json
+            ├── playwright.config.js
+            └── smoke.spec.js
+### What each folder contains
+
+- **backend-fastapi/** → FastAPI backend service (API)
+- **backend-node/** → Node.js backend service (API)
+- **frontend/** → Frontend UI application
+- **k8s/** → Kubernetes manifests (Deployments, Services, Ingress, ConfigMaps, etc.)
+- **Jenkinsfile** → Jenkins CI pipeline definition (Build + Test for Day4)
+- **db/** → Database init/migration scripts
+- **tests/api/smoke.sh** → API smoke test script (quick health checks)
+- **tests/ui/** → Playwright UI automation tests
+
+> **Note:** Day4 focus is **CI (Build + Test only)**.  
+> Kubernetes deployment will be covered in **Day5** using the same repo structure.
+
+
 ```
 
 ---
